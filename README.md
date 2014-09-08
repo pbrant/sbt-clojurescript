@@ -1,6 +1,6 @@
 # sbt-clojurescript
 
-[Simple Build Tool](http://www.scala-sbt.org/ "simple build tool") plugin for compiling JavaScript files from multiple sources using ClojureScript.
+[Simple Build Tool](http://www.scala-sbt.org/ "simple build tool") plugin for compiling ClojureScript files.
 
 ## Settings
 
