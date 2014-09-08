@@ -46,13 +46,13 @@ If you're using [xsbt-web-plugin](https://github.com/JamesEarlDouglas/xsbt-web-p
 
 ### Changing the directory that is scanned, use:
 
-    (sourceDirectory in (Compile, ClojureScriptKeys.closure)) <<= (sourceDirectory in Compile)(_ / "path" / "to" / "cljsfiles")
+    (sourceDirectory in (Compile, ClojureScriptKeys.cljs)) <<= (sourceDirectory in Compile)(_ / "path" / "to" / "cljsfiles")
 
 ### Changing target js destination:
 
 To change the default location of compiled js files, add the following to your build definition
 
-    (resourceManaged in (Compile, ClojureScriptKeys.closure)) <<= (resourceManaged in Compile)(_ / "your_preference" / "js")
+    (resourceManaged in (Compile, ClojureScriptKeys.cljs)) <<= (resourceManaged in Compile)(_ / "your_preference" / "js")
 
 ## Acknowledgements
 
