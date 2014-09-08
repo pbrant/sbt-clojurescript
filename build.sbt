@@ -5,7 +5,7 @@ organization := "org.scala-sbt"
 name := "sbt-clojurescript"
 
 version <<= sbtVersion(v =>
-  if(v.startsWith("0.13")) "0.1.0-SNAPSHOT"
+  if(v.startsWith("0.13")) "0.1.0"
   else error("unsupported sbt version %s" format v)
 )
 

@@ -1,22 +1,33 @@
-
 {
- "organization":"org.scala-sbt",
- "name":"sbt-closure",
- "version":"0.1.0",
- "description":"Sbt plugin for compiling JavaScript manifest sources using Google Closure Compiler",
- "site":"https://github.com/eltimn/sbt-closure",
- "tags":["sbt","closure"],
- "docs":"",
- "licenses": [{
-   "name": "Apache License 2.0",
-   "url": "https://github.com/eltimn/sbt-closure/raw/master/LICENSE"
-  }],
- "resolvers": ["http://scala-tools.org/repo-releases"],
- "dependencies": [{
-   "organization":"com.google.javascript",
-   "name": "closure-compiler",
-   "version": "r1741"
-  }],
- "scalas": ["2.9.1"],
- "sbt": true
+  "organization" : "org.scala-sbt",
+  "name" : "sbt-clojurescript",
+  "version" : "0.1.0",
+  "description" : "Sbt plugin for compiling ClojureScript sources",
+  "site" : "https://github.com/pbrant/sbt-clojurescript",
+  "tags" : [ "sbt", "clojurescript" ],
+  "docs" : "",
+  "resolvers" : [ "https://oss.sonatype.org/content/repositories/releases" ],
+  "dependencies" : [ {
+    "organization" : "org.clojure",
+    "name" : "clojure",
+    "version" : "1.6.0"
+  }, {
+    "organization" : "org.clojure",
+    "name" : "clojurescript",
+    "version" : "0.0-2322"
+  }, {
+    "organization" : "org.scala-sbt",
+    "name" : "scripted-sbt",
+    "version" : "0.13.5"
+  }, {
+    "organization" : "org.scala-sbt",
+    "name" : "sbt-launch",
+    "version" : "0.13.5"
+  } ],
+  "scalas" : [ "2.10.4" ],
+  "licenses" : [ {
+    "name" : "Apache License 2.0",
+    "url" : "https://github.com/pbrant/sbt-clojurescript/raw/master/LICENSE"
+  } ],
+  "sbt" : true
 }
