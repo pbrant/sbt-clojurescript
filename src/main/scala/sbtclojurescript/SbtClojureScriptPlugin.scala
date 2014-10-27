@@ -30,9 +30,10 @@ object SbtClojureScriptPlugin extends Plugin {
     )) ++ Seq(
       additionalSettings := None,
       cleanFiles <++= (cleanFiles in cljs in conf),
-      watchSources <++= (watchSources in cljs in conf),
+      watchSources <++= (watchSources in cljs in conf) /*,
       resourceGenerators in conf <+= cljs in conf,
       compile in conf <<= (compile in conf).dependsOn(cljs in conf)
+      */
     )
 
   def cljsSettings0: Seq[Setting[_]] = Seq(
